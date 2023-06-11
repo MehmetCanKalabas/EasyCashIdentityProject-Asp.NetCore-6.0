@@ -29,7 +29,6 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 				int code;
 				code = random.Next(100000, 1000000);
 
-
 				AppUser appUser = new AppUser()
 				{
 					UserName = model.UserName,
