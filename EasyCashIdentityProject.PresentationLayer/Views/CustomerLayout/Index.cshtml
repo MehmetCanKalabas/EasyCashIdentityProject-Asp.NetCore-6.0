@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+
+            @await Component.InvokeAsync("_CustomerLayoutSideBarPartial")
+
+            @await Component.InvokeAsync("_CustomerLayoutNavBarPartial")
+            
+            <div class="" role="main">
+                
+                @RenderBody()
+
+            </div>
+
+            @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
+
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
+</body>
+</html>
